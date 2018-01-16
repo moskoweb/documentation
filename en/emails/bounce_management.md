@@ -68,6 +68,8 @@ Mautic supports the bounce and complaint management from Amazon Simple Email Ser
 
 3) Enter the url to the Amazon webhook on your Mautic installation
 
+Endpoint URL: `http://your-mautic.com/mailer/amazon/callback`
+
 ![Topic](/emails/media/amazon_webhook_5.png "Enter url to Mautic")
 
 4) The subscriber will be in the pending state till it is confirmed. AWS will call your Amazon webhook with a SubscriptionConfirmation request including a callback url. To confirm Mautic will send a request back to this callback url to validate the subscription. Therefore make sure your Mautic installation is allowed to connect to the internet, otherwise the subscription will remain in the pending state and won't work. Check the logfile for more information.
