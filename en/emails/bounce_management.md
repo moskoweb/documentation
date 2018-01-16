@@ -40,7 +40,7 @@ All contacts with bounced emails should appear in this segment.
 
 1) Login to your Elastic Email account and go to Settings -> Notification.
 
-2) Fill in the Notification URL as http://your-mautic-url.tld/mailer/elasticemail/callback
+2) Fill in the Notification URL as `http://your-mautic-url.tld/mailer/elasticemail/callback`
 
 3) Check  these actions:  Unsubscribed, Complaints, Bounce/Error
 
